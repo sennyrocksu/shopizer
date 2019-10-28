@@ -73,7 +73,7 @@ public class Customer extends SalesManagerEntity<Long, Customer> implements Audi
 	@Column(name="CUSTOMER_DOB")
 	private Date dateOfBirth;
 	
-	@Email
+//	@Email
 	@NotEmpty
 	@Column(name="CUSTOMER_EMAIL_ADDRESS", length=96, nullable=false)
 	private String emailAddress;

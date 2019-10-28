@@ -129,7 +129,7 @@
             	   }
             	   //redirect to the same url
             	   //log('Before redirection');
-            	   location.href= getContextPath() + '/shop/customer/dashboard.html';
+            	   location.href= getContextPath() + '/shop/cart/shoppingCart.html';
                 } else {
            		   errorMessage = errMessageDiv + getLoginErrorLabel() + '</div>';
         		   $(errorMessage).prependTo('#login-form');

@@ -17,9 +17,9 @@ public class CustomerEntity extends Customer implements Serializable {
 	 */
 	private static final long serialVersionUID = 1L;
 
-	@ApiModelProperty(notes = "Customer email address. Required for registration")
-	@Email (message="{messages.invalid.email}")
-    @NotEmpty(message="{NotEmpty.customer.emailAddress}")
+//	@ApiModelProperty(notes = "Customer email address. Required for registration")
+//	@Email (message="{messages.invalid.email}")
+//    @NotEmpty(message="{NotEmpty.customer.emailAddress}")
 	private String emailAddress;
 	@Valid
 	@ApiModelProperty(notes = "Customer billing address")
@@ -38,8 +38,8 @@ public class CustomerEntity extends Customer implements Serializable {
 	
 	private String storeCode;
 	
-	@ApiModelProperty(notes = "Username (use email address)")
-	@NotEmpty(message="{NotEmpty.customer.userName}")
+//	@ApiModelProperty(notes = "Username (use email address)")
+//	@NotEmpty(message="{NotEmpty.customer.userName}")
 	//can be email or anything else
 	private String userName;
 	

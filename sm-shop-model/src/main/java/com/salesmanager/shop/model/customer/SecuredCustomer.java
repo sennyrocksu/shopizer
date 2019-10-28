@@ -18,10 +18,10 @@ public class SecuredCustomer extends PersistableCustomer implements Serializable
 	
 
 
-	@Size(min=6, message="{registration.password.not.empty}")
+	@Size(min=1, max=240, message="{registration.password.not.empty}")
 	private String password;
 	
-	@Size(min=6, message="{registration.password.not.empty}")
+	@Size(min=1, max = 240, message="{registration.password.not.empty}")
 	private String checkPassword;
 	
 

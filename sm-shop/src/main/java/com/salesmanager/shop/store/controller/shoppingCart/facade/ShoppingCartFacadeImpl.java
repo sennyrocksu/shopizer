@@ -150,7 +150,7 @@ public class ShoppingCartFacadeImpl
         			if(CollectionUtils.isEmpty(cartItem.getAttributes())) {
         				if(!duplicateFound) {
         					if(!shoppingCartItem.isProductVirtual()) {
-	        					cartItem.setQuantity(cartItem.getQuantity() + shoppingCartItem.getQuantity());
+	        					cartItem.setQuantity(shoppingCartItem.getQuantity());
         					}
         					duplicateFound = true;
         					break;
